@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Operaciones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" th:href="@{/css/estilo.css}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8"> <!-- Ampliar el ancho de la columna -->
+                <h1 class="text-center mb-4">Operaciones</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8"> <!-- Ampliar el ancho de la columna -->
+                <div class="row">
+                    <div class="col-md-6"> <!-- Ampliar el ancho de la columna -->
+                        <div class="card card-custom">
+                            <div class="card-body">
+                                <h5 class="card-title">Mostrar Números Primos</h5>
+                                <form action="/verNumerosPrimos" method="get">
+                                    <div class="form-group">
+                                        <label for="inicio">Número de inicio:</label>
+                                        <input type="number" class="form-control" id="inicio" name="inicio" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fin">Número de fin:</label>
+                                        <input type="number" class="form-control" id="fin" name="fin" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Ver Números Primos</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6"> <!-- Ampliar el ancho de la columna -->
+                        <div class="card card-custom">
+                            <div class="card-body">
+                                <h5 class="card-title">Mostrar Tabla de Multiplicar</h5>
+                                <form action="/verTablaMultiplicar" method="get">
+                                    <div class="form-group">
+                                        <label for="numero">Número:</label>
+                                        <input type="number" class="form-control" id="numero" name="numero" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Ver Tabla de Multiplicar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

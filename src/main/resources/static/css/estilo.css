@@ -1,0 +1,25 @@
+  .card-custom {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 15px; /* Bordes más redondeados */
+            margin-bottom: 20px; /* Espacio entre las tarjetas */
+            height: 300px; /* Altura fija */
+        }
+
+        .card-custom:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        /* Ajuste del tamaño de las tarjetas */
+        .card-custom .card-body {
+            padding: 20px; /* Aumentar el espacio interno */
+            height: 90%; /* Altura al 100% del contenedor */
+        }
+
+        /* Ajuste del tamaño de la fuente */
+        .card-custom .card-title,
+        .card-custom .form-group label,
+        .card-custom .form-control,
+        .card-custom .btn {
+            font-size: 1rem; /* Tamaño de fuente más grande */
+        }
